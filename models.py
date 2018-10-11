@@ -73,6 +73,7 @@ class Movie:
         self.title = data[17]
         self.vote_average = float(data[18])
         self.vote_count = float(data[19])
+        self.score = self.vote_count * self.vote_average
         self.credits = None
 
 
